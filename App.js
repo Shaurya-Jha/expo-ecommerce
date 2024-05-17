@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
-import HomePage from './pages/Home';
+// import HomePage from './app/home/index';
 import { PaperProvider } from 'react-native-paper';
 import TopBar from './components/TopBar';
-import ProductPage from './pages/Product';
+// import ProductPage from './pages/Product';
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client"
+import HomePage from './app/home';
 
-const image1 = require('./assets/image1.jpg')
+// const image1 = require('./assets/image1.jpg')
 
 const client = new ApolloClient({
   uri: 'https://mock.shop/api',
@@ -20,6 +21,7 @@ export default function App() {
         {/* <View> */}
         <ScrollView>
           <TopBar />
+          {/* <HomePage /> */}
           <HomePage />
 
           {/* <ProductPage /> */}
