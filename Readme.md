@@ -5,7 +5,7 @@ E-commerce app made with Expo React-Native. Product details as well as collectio
 
 ## Tools and Technology used
 - Expo React-Native
-- UI library : react-native-paper
+- UI library - react-native-paper
 - expo-router
 - apollo/client
 - graphql
